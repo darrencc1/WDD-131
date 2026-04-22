@@ -24,3 +24,21 @@ footer {
     background-color: steelblue;
     color: white;
 }
+
+/* .highlight { } class */
+/* #content { } id */
+/* section .highlight {} only targets things with highlight class inside section*/
+/* div p { } only the p inside of dive is affected */
+
+/*  div > p {} selects only direct descendants,  */
+/* h1 + p {} Selects immediate next sibling */
+/* h1 ~ p {} selects all sibling p elements after h1 */
+
+/*  Group Selectors */
+    /* h1,h2 {} affects both */
+    /* p,li {}  all p and li elements together.*/
+/* Pseudo-class Selectors */
+    /* a:hover {} only works on anchor tags that are being hovered over. */
+    /* li:nth-of-type(3) {} targets 3rd list item of its type. */
+/* Attribute Selectors */
+    /* a[target="_blank] targets only elements where target element attributes are _blank. */
