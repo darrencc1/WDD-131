@@ -1,0 +1,53 @@
+/*  css review */
+/* Css for body */
+body {
+    background-color: #ddd;
+    font-size: 20px;
+    /* cannot center body itself */
+}
+/* # to target id of content */
+#content {
+    max-width: 60%;
+    /* never gets bigger than 60% */
+    border: 1px solid darkgray;
+    /* border wants 3 things how big, what kind, color */
+    margin: 40px auto;
+    /* gives left and right = amount of space */
+    padding: 50px;
+    /* inside of element */
+}
+p {
+    color: #035f9c;
+    font-size: 1.3em;
+    /* 30% bigger 1em is 100% */
+}
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+    margin-top: 50px;
+}
+h1, h2, p {
+    text-align: center;
+    
+}
+/* #logos{
+    text-align: center;
+} */
+ /* This also centers the images insife of logos */
+img {
+    width: 50%;
+    /* always centered (grows with size of page */
+    display: block;
+    /* takes all the space it can */
+    margin: 50px auto;
+}
+#topics {
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 60%;
+}
+.list{
+    list-style-type: none;
+    /* Takes off the bullets from the list class*/
+}
