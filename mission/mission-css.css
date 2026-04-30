@@ -44,3 +44,12 @@ img {
 .intro {
     font-style: italic;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode h2 {
+    color: #035f9c;
+}
