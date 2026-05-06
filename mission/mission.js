@@ -12,7 +12,7 @@ function changeMode() {
         // background.style.backgroundColor = 'black';
         // wordCol.style.color = 'white';
         background.classList.add("dark-mode");
-        // Since dark-mode is added to the body as a class. Everything will inherit its css rules. 
+        // Since dark-mode is added to the body as a class. Everything will inherit the inheritable css rules
         logo.setAttribute('src', 'byui-logo-dark.png');
     }
     else {
