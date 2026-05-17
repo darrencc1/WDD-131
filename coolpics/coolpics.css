@@ -5,7 +5,6 @@ body {
 
 header,
 footer {
-  max-width: 1000px;
   margin: 1rem auto;
   border: none;
   padding: 1rem;
