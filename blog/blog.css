@@ -14,13 +14,13 @@ footer {
 }
 .main-nav {
     text-align: right;
-    padding: 2px;
+    padding: 1rem 1rem;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
 }
 
 .main-nav a {
-    padding: 1px;
+    padding: 1.5rem;
     color: red;
     
 }
@@ -32,20 +32,32 @@ footer {
 
 .book-data {
     border-top: 2px solid gold;
+    margin-top: 3rem;
     text-align: right;
 }
 
-
-
-.book-content img {
-    max-width: 100%;
-    height: auto;
+.book-content {
+    text-align: center;
 }
 
-img {
-    max-width: 100%;
+.book-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
     height: auto;
-    text-align: center;
+    
+}
+.book-content p {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.book-content h2{
+    color: darkred;
+    
+    
 }
 
 @media screen and (min-width: 700px) {
@@ -57,6 +69,22 @@ img {
         border-top: none;
         border-right: 2px solid gold;
         padding-right: 1rem;
+    }
+
+    .book-content {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .book-content img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        height: auto;
+    }
+    .book-content p, h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
     }
 
     footer {
