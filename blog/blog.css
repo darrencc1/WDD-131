@@ -1,52 +1,66 @@
-
-main {
+main{
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 header, footer {
     color: darkred;
-    padding: 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 
 }
-footer {
+.main-nav{
     border-top: 2px solid gold;
-}
-.main-nav {
+    border-bottom: 2px solid gold;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
     text-align: right;
-    padding: 1rem 1rem;
+    
+}
+.main-nav a {
+    padding: 1.5rem;
+    color: darkred;
+}
+
+footer {
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
 }
 
-.main-nav a {
-    padding: 1.5rem;
-    color: darkred;
-    
-}
-.book-review {
+ .book-review {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
+.book {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+}
+.book-content {
+    text-align: left;
+    padding-left: 1rem;
+}
 .book-data {
-    border-top: 2px solid gold;
-    margin-top: 3rem;
+    border-top: none;
+    border-right: 2px solid gold;
+    padding-right: 1rem;
     text-align: right;
+    margin-top: 0;
 }
 
-.book-content {
-    text-align: center;
-}
 
 .book-content img {
     display: block;
     margin: 0 auto;
     max-width: 250px;
     height: auto;
+    justify-items: center;
     
 }
+
 .book-content p {
     max-width: 450px;
     margin-left: auto;
@@ -54,13 +68,13 @@ footer {
     text-align: left;
 }
 
-.book-content h2{
+.book-content h2 {
     color: darkred;
-    
-    
 }
 
-@media screen and (min-width: 700px) {
+/* I commented this out because I think the screen for mobile and bigger screens will be the same. Thats how the assigemnt looks anyway.  */
+
+/* @media screen and (min-width: 700px) {
     .book-review {
         grid-template-columns: 200px 1fr;
     }
@@ -90,5 +104,4 @@ footer {
     footer {
         grid-column: 1 / 3;
     }
-}
-
+} */
