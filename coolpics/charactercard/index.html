@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Snortleblat Character Card">
+  <meta property="og:description" content="A character card for Snortleblat with health and level buttons.">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="snortleblat.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Snortleblat Character Card">
+  <meta name="twitter:description" content="A character card for Snortleblat with health and level buttons.">
+  <meta name="twitter:image" content="snortleblat.webp">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="card.css">
+  <script src="card.js" defer></script>
+
+  <title>Character Card</title>
+</head>
+<body>
+  <main class="card">
+    <img id="characterImage" class="image" src="snortleblat.webp" alt="Snortleblat Crockodile Looking Character">
+
+    <h1 id="characterName" class="name"></h1>
+
+    <section class="stats">
+      <p><strong>Class:</strong> <span id="characterClass"></span></p>
+      <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+      <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+    </section>
+
+    <section class="buttons">
+      <button id="attackButton">Attacked</button>
+      <button id="levelButton">Level Up</button>
+    </section>
+
+    <p id="message"></p>
+  </main>
+</body>
+</html>
