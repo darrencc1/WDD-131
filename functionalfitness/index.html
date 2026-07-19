@@ -4,25 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Darren Chambers">
-    <title>Document</title>
+    <meta name="description" content="Build a personalized beginner fitness plan with strength, cardio, and mobility workouts.">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Functional Fitness Planner</title>   
+    <link rel="stylesheet" href="stylesheets/home.css">
 </head>
+
 <body>
-    <h1>Functional Fitness Planner</h1>
-    <p> Functional Fitness Planner helps beginners build simple fitness habits with
-  				clear workouts for strength, cardio, and mobility. Users can choose a workout
-  				based on their time, difficulty level, and fitness goal. </p>
-    
-    <section>
-        <h2>Strength</h2>
-        <img src="images/dumbell.jpg" alt="Dumbells being lifted off rack">
-        <p>Build muscle, increase strength, and improve power. These workouts focus on helping you become stronger while supporting muscle growth.</p>
+    <header>
+        <h1>Functional Fitness Planner</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workouts.html">Workouts</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="intro">
+        <h2>Find the Right Workout for You</h2>
+        <p>
+            Functional Fitness Planner helps beginners build simple fitness
+            habits with clear workouts for strength, cardio, and mobility.
+            Choose a workout based on your time, difficulty level, and fitness
+            goal.
+        </p>
     </section>
-    <section>
-        <h2>Cardio</h2>
-        <p>Improve your endurance, heart health, and energy levels. Cardio workouts help you move longer with less fatigue in everyday life and exercise.</p>
-    </section>
-    
-    <p>Mobility: Increase flexibility, improve movement, and keep your body functioning at its best. These sessions combine mobility work with light strength and cardio to help you move better and reduce stiffness.</p>
-    <img src="images/">
+
+    <div class="fitness-cards">
+        <section class="fitness-card">
+            <h2>Strength</h2>
+
+            <a href="workouts.html">
+                <img
+                    src="images/dumbbell.jpg"
+                    alt="Dumbbells being lifted from a rack"
+                    loading="lazy"
+                >
+            </a>
+
+            <p>
+                Build muscle, increase strength, and improve power. These
+                workouts help you become stronger while supporting muscle
+                growth.
+            </p>
+        </section>
+
+        <section class="fitness-card">
+            <h2>Cardio</h2>
+
+            <a href="workouts.html">
+                <img
+                    src="images/Running.jpg"
+                    alt="A person completing a cardio workout"
+                    loading="lazy"
+                >
+            </a>
+
+            <p>
+                Improve your endurance, heart health, and energy levels.
+                Cardio workouts help you move longer with less fatigue.
+            </p>
+        </section>
+
+        <section class="fitness-card">
+            <h2>Mobility</h2>
+
+            <a href="workouts.html">
+                <img
+                    src="images/mobility.jpg"
+                    alt="A person performing a mobility stretch"
+                    loading="lazy"
+                >
+            </a>
+
+            <p>
+                Increase flexibility, improve movement, and reduce stiffness
+                with simple mobility sessions.
+            </p>
+        </section>
+    </div>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Darren Chambers</p>
+    </footer>
 </body>
 </html>

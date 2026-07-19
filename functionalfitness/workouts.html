@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your BMI and find beginner strength, cardio, and mobility workouts.">
+    <meta name="author" content="Darren Chambers">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Workout Plans | Functional Fitness Planner</title>
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="stylesheets/workouts.css">
+    <script src="fitness.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Functional Fitness Planner</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workouts.html">Workouts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bmi-planner">
+            <h2>Get a Starting Recommendation</h2>
+
+            <p>
+                Enter your height and weight to calculate your BMI and receive
+                a general workout suggestion.
+            </p>
+
+            <form id="bmi-form">
+                <div class="form-group">
+                    <label for="height-feet">Height in feet</label>
+                    <input
+                        type="number"
+                        id="height-feet"
+                        min="1"
+                        max="8"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="height-inches">Additional inches</label>
+                    <input
+                        type="number"
+                        id="height-inches"
+                        min="0"
+                        max="11"
+                        value="0"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight in pounds</label>
+                    <input
+                        type="number"
+                        id="weight"
+                        min="1"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Get Recommendation</button>
+            </form>
+
+            <div id="bmi-result" aria-live="polite"></div>
+        </section>
+
+        <section class="workout-library">
+    <h2>Choose a Workout Type</h2>
+
+    <p>
+        Select a category to view the available workout plans.
+    </p>
+
+    <div class="workout-type-buttons">
+        <button
+            class="workout-type-button"
+            type="button"
+            data-type="Strength"
+            aria-pressed="false"
+        >
+            Strength
+        </button>
+
+        <button
+            class="workout-type-button"
+            type="button"
+            data-type="Cardio"
+            aria-pressed="false"
+        >
+            Cardio
+        </button>
+
+        <button
+            class="workout-type-button"
+            type="button"
+            data-type="Mobility"
+            aria-pressed="false"
+        >
+            Mobility
+        </button>
+    </div>
+
+    <div id="workout-results" aria-live="polite">
+        <p class="selection-message">
+            Choose a workout type to see the available plans.
+        </p>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Darren Chambers</p>
+    </footer>
+</body>
+</html>
